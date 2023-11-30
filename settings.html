@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1>Settings</h1>
+
+        <div class="section">
+            <div class="section-title">Wi-Fi</div>
+            <div class="setting">
+                <label for="Wi-Fi-status">Wi-Fi Status:</label>
+                <select id="Wi-Fi-status" name="Wi-Fi-status">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="wifi-name">Wi-Fi Network Name:</label>
+                <input type="text" id="wifi-name" name="wifi-name" value="MyWi-FiNetwork">
+            </div>
+            <div class="setting">
+                <label for="wifi-password">Wi-Fi Password:</label>
+                <input type="text" id="wifi-password" name="wifi-password" value="********">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Bluetooth</div>
+            <div class="setting">
+                <label for="bluetooth-status">Bluetooth Status:</label>
+                <select id="bluetooth-status" name="bluetooth-status">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">System Information</div>
+            <div class="setting">
+                <label for="Device">Operating System Version:</label>
+                <input type="text" id="Device" name="Device" value="Raspberry Pi 4 Model B">
+            </div>
+            <div class="setting">
+                <label for="os-version">Operating System Version:</label>
+                <input type="text" id="os-version" name="os-version" value="Version 1.0">
+            </div>
+            <div class="setting">
+                <label for="storage">Available Storage:</label>
+                <input type="text" id="storage" name="storage" value="64 GB">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Display</div>
+            <div class="setting">
+                <label for="slider">Brightness:</label>
+                <input type="range" id="slider" name="slider" min="0" max="100" value="50">
+                </select>
+        </div>
+
+        <button>Save Changes</button>
+    </div>
+</body>
+</html>

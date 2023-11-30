@@ -1,0 +1,138 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff8d;
+    text-align: center;
+}
+
+/* Style for the app container */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(176, 176, 176);
+    border: 1px solid #5c5c5c8d;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Spacing between apps */
+    height: 600px;
+}
+
+/* Style for each app icon */
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+/* Style for the app description text */
+.app-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    height: 20px; 
+}
+
+/* Hover effect for app icons */
+.app-icon:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the "Recent Gestures" app */
+.recent-gestures {
+    background-color: #33ff33; 
+    color: #fff; 
+}
+
+.app-icon.recent-gestures img {
+    width: 200px; 
+    height: 200px; 
+    position: relative; 
+}
+
+/* Style for the "Linked Devices" app */
+.linked-devices {
+    background-color: #ff0000; 
+    color: #000; 
+}
+
+.app-icon.linked-devices img {
+    width: 400px; 
+    height: 400px; 
+    position: relative; 
+    top: 90px; 
+    left: -70px; 
+}
+
+
+
+/* Style for the "Add New Devices" app */
+.add-new-devices {
+    background-color: #3357ff; 
+    color: #fff;
+}
+
+.app-icon.new-devices img {
+    width: 175px;
+    height: 175px; 
+    position: relative; 
+    top: -20px; 
+}
+
+/* Style for the "Gesture Linking" app */
+.gesture-linking {
+    background-color: #ff33c4; 
+    color: #fff; 
+}
+
+.app-icon.gesture-linking img {
+    width: 200px; 
+    height: 150px;
+    position: relative; 
+    top: -45px; 
+    left: 10px; 
+}
+
+
+
+/* Style for the "New Gestures" app */
+.new-gestures {
+    background-color: #ffeb33; 
+    color: #000;
+}
+
+.app-icon.new-gestures img {
+    width: 290px; 
+    height: 240px; 
+    position: relative; 
+    top: 15px;
+    left: -20px; 
+}
+
+/* Style for the "Settings" app */
+.settings {
+    background-color: #6b6b6b; 
+    color: #fff; 
+}
+
+.app-icon.settings img {
+    width: 225px;
+    height: 225px; 
+}
+
+/* Hover effect for all app icons */
+.app-icon:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
