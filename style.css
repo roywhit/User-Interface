@@ -7,33 +7,35 @@ body {
 
 /* Style for the app container */
 .container {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between apps */
+    width: 1024px; /* Full width */
+    height: 600px;
     background-color: rgb(176, 176, 176);
     border: 1px solid #5c5c5c8d;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 20px; /* Spacing between apps */
-    height: 600px;
+    padding: 20px;
+    margin: 0 auto;
 }
+    
 
 /* Style for each app icon */
 .app-icon {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: #007bff;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 60px;
     cursor: pointer;
     text-align: center;
     padding: 20px;
     height: 250px;
     width: 250px;
+    align-items: center;
+    background-color: #007bff; 
 }
 
 /* Style for the app description text */
@@ -53,6 +55,9 @@ body {
 .recent-gestures {
     background-color: #33ff33; 
     color: #fff; 
+    position: relative;
+    top: 0px;
+    left: 20px;
 }
 
 .app-icon.recent-gestures img {
@@ -65,22 +70,28 @@ body {
 .linked-devices {
     background-color: #ff0000; 
     color: #000; 
+    position: relative;
+    top: 0px;
+    left: 20px;
 }
 
 .app-icon.linked-devices img {
     width: 400px; 
     height: 400px; 
     position: relative; 
-    top: 90px; 
-    left: -70px; 
+    top: 100px; 
+    left: 0px; 
 }
 
 
 
 /* Style for the "Add New Devices" app */
-.add-new-devices {
-    background-color: #3357ff; 
+.new-devices {
+    background-color: #3374ff; 
     color: #fff;
+    position: relative;
+    top: 0px;
+    right: -15px;
 }
 
 .app-icon.new-devices img {
@@ -88,12 +99,16 @@ body {
     height: 175px; 
     position: relative; 
     top: -20px; 
+    bottom: 100px;
 }
 
 /* Style for the "Gesture Linking" app */
 .gesture-linking {
     background-color: #ff33c4; 
     color: #fff; 
+    position: relative;
+    left: 20px;
+    bottom: 0px;
 }
 
 .app-icon.gesture-linking img {
@@ -110,6 +125,9 @@ body {
 .new-gestures {
     background-color: #ffeb33; 
     color: #000;
+    position: relative;
+    left: 20px;
+    bottom: 0px;
 }
 
 .app-icon.new-gestures img {
@@ -123,7 +141,10 @@ body {
 /* Style for the "Settings" app */
 .settings {
     background-color: #6b6b6b; 
-    color: #fff; 
+    color: #fff;
+    position: relative;
+    right: -15px;
+    bottom: 0px; 
 }
 
 .app-icon.settings img {
