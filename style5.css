@@ -18,7 +18,7 @@ body {
     background-color: rgb(176, 176, 176);
     border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(113, 113, 113);
     width: 1024px;
     height: 550px;
     text-align: center;
