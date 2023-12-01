@@ -47,10 +47,12 @@ input[type="file"] {
 }
 
         /* Button styling */
-        button {
+        .button-link2 {
             display: block;
-            
             padding:10px 20px;
+            width: 115px;
+            text-decoration: none;
+            text-align: center;
             background-color: #007BFF;
             color: #fff;
             border: none;
@@ -59,8 +61,8 @@ input[type="file"] {
             font-weight: bold;
             font-size: 16px;
             position: relative;
-            bottom: -305px;
-            left: 340px;
+            bottom: -295px;
+            left: 330px;
         }
         
         .button-link {
@@ -77,11 +79,11 @@ input[type="file"] {
             font-weight: bold;
             font-size: 16px;
             position: relative;
-            bottom: -267px;
+            bottom: -257px;
             left: 520px;
         }
         
-                button:hover {
+                .button-link2:hover {
                     background-color: #0056b3;
                 }
         
