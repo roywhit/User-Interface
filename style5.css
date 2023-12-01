@@ -18,7 +18,6 @@ body {
     background-color: rgb(176, 176, 176);
     border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid rgb(113, 113, 113);
     width: 1024px;
     height: 550px;
     text-align: center;
@@ -55,19 +54,17 @@ body {
 
 .command-content {
     position: relative;
-    top: 60px;
+    top: 70px;
     left: -20px;
 
 }
 
-input[type="text"],
+input[type="bluetooth-status"],
 select {
     width: 300px;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    height: 20px;
-    font-size: 18px;
 }
 
 .arrow img {
@@ -98,7 +95,7 @@ button {
     font-weight: bold;
     font-size: 16px;
     position: relative;
-    bottom: -5px;
+    bottom: 0px;
     left: 420px;
 }
 
