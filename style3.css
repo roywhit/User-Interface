@@ -61,21 +61,44 @@
         }
 
         /* Button styling */
-        button {
-            display: block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 16px;
-            position: relative;
-            bottom: -330px;
-            left: 437px;
-        }
+button {
+    display: block;
+    
+    padding:10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    bottom: -335px;
+    left: 340px;
+}
+
+.button-link {
+    display: block;
+    padding:10px 20px;
+    width: 115px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    bottom: -297px;
+    left: 520px;
+}
 
         button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-link:hover {
             background-color: #0056b3;
         }
